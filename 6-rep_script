@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+file="names.txt"
+
+while read f;
+do
+	name="$f";
+	
+	cat msg.txt > $name.txt
+	
+	sed -i -e "s/Recipient_Name/$name/g" $name.txt
+
+done < $file
+
