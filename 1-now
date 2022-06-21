@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# shell script that will print the strings “one”,” two”,” three”,” four”, and “five” on the screen with each appearing on a separate line.
+
+#echo -e "one\ntwo\nthree\nfour\nfive"
+
+echo -e "one\ntwo\nthree\nfour\nfive" > "$(date +%Y-%m-%d)"-file.txt
